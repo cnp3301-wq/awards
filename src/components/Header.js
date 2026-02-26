@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [menuHover, setMenuHover] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,7 +44,7 @@ function Header() {
               transition: 'all 0.3s ease',
               fontSize: scrolled ? '1rem' : '1.1rem'
             }}>
-              KPR College of Arts and Science
+              KPR Legacy Awards
             </span>
             <span className="logo-subtitle" style={{
               opacity: scrolled ? 0.7 : 1,
@@ -55,32 +54,7 @@ function Header() {
             </span>
           </div>
         </Link>
-        <nav className="nav-buttons">
-          <Link 
-            to="/login" 
-            className="btn btn-outline"
-            onMouseEnter={() => setMenuHover('login')}
-            onMouseLeave={() => setMenuHover(null)}
-            style={{
-              transform: menuHover === 'login' ? 'translateY(-3px)' : 'translateY(0)',
-              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
-            }}
-          >
-            Login
-          </Link>
-          <Link 
-            to="/register" 
-            className="btn btn-primary"
-            onMouseEnter={() => setMenuHover('register')}
-            onMouseLeave={() => setMenuHover(null)}
-            style={{
-              transform: menuHover === 'register' ? 'translateY(-3px) scale(1.02)' : 'translateY(0) scale(1)',
-              transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
-            }}
-          >
-            Register
-          </Link>
-        </nav>
+
       </div>
     </header>
   );

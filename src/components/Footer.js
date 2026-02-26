@@ -59,7 +59,7 @@ function Footer() {
             color: '#fff',
             textShadow: '0 2px 10px rgba(0,0,0,0.1)'
           }}>
-            🏆 KPRCAS Legacy Awards
+            🏆 KPR Legacy Awards
           </span>
         </div>
         
@@ -69,7 +69,7 @@ function Footer() {
           fontWeight: '500',
           marginBottom: '1.5rem'
         }}>
-          &copy; 2026 KPRCAS Legacy Awards. All rights reserved.
+          &copy; 2026 KPR Legacy Awards. All rights reserved.
         </p>
         
         <div className="footer-links" style={{
